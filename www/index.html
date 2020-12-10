@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simultaneous Equation Solver</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="./js/js-splash-2.0.min.js"></script>
+	<style type="text/css">
+
+
+#workings{
+         font-size:20px;
+				 margin-top: 10px;
+         color:black;
+         border-radius:5px;
+         padding:0px 10px;
+         }
+
+#div {
+	position: relative;
+	font-size: 20px;
+	margin-top: 5px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+	<h1 class="my-3">Simultaneous Equation Solver</h1>
+	<div class="form-group">
+		<input type="text" id="eq1" class="form-control" placeholder="x-2y=60">
+		<input type="text" id="eq2" class="form-control my-3" placeholder="2x-2y=10">
+	</div>
+	<button class="btn btn-info" onclick="simulEquate()" style="margin-left: 35px" id="solve">Solve</button>
+	<button class="btn btn-warning" style="margin-left: 37px" onclick="clearIt()" id="clear">Clear</button>
+	<button id="showWorkings" class="btn btn-success mx-9" style="margin-left: 37px" onclick="showSteps()">Prove</button>
+	<br>
+	<div id="div1"></div>
+	<div id="div2"></div>
+	<div id="workings">
+</div>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/js-splash-2.0.min.js"></script>
+</body>
+</html>
